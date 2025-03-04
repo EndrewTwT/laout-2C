@@ -54,7 +54,7 @@ body {
 .music{
     padding: 24px 0;
     justify-content: space-between;
-    display: flex;
+    display: inline-block;
 }
 .music-imagem{
     width: 140px;
