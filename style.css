@@ -28,12 +28,12 @@ body {
     font-size: 25px;
 }
 
-.music-imagem{
+.musica2-imagem{
     width: 10%;
     
 }
 
-.music{
+.musica2{
     background-image: linear-gradient(#fba3cc,#fbc7e2);
     color:white;
     display: flex;
@@ -42,12 +42,12 @@ body {
     padding: 24px 0;
 }
 
-.music-div-conteudo{
+.musica2-div-conteudo{
     width: 35%;
 }
 
 
-.music-titulo{
+.musica2-titulo{
     padding: 34px 0;
 }
 
