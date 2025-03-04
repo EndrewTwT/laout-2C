@@ -53,6 +53,7 @@ body {
 
 .music{
     padding: 24px 0;
+    justify-content: center space-between;
 }
 .music-imagem{
     width: 140px;
