@@ -1,114 +1,104 @@
-/* 🔹 Reset e Fonte */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-/* 🔹 Cabeçalho */
 .cabecalho {
     background-color: #fba3cc;
     color: white;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items:center;
     padding: 20px 0;
 }
-
-.cabecalho-logo {
+.cabecalho-logo{
     width: 10%;
 }
-
-.cabecalho-imagem {
-    width: 40%;
+.cabecalho-imagem{
+     width: 40%;
+    
+    
 }
 
-.cabecalho-lista-item {
+.cabecalho-lista-item{
     display: inline-block;
     margin: 0 16px;
     font-size: 25px;
 }
 
-/* 🔹 Seção Música */
-.musica2 {
-    background-image: linear-gradient(#fba3cc, #fbc7e2);
-    color: white;
+.musica2-imagem{
+    width: 10%;
+    
+}
+
+.musica2{
+    background-image: linear-gradient(#fba3cc,#fbc7e2);
+    color:white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px 0;
-    text-align: center;
 }
 
-.musica2-imagem {
-    width: 10%;
-}
-
-.musica2-div-conteudo {
+.musica2-div-conteudo{
     width: 35%;
 }
 
-.musica2-titulo {
+
+.musica2-titulo{
     padding: 34px 0;
 }
 
-/* 🔹 Galeria de Músicas */
-.music {
+.music{
     padding: 24px 0;
 }
+.music-imagem {
+    width: 100%; /* As imagens se ajustam ao tamanho da coluna */
+    max-width: 140px; /* Limite para não ficarem muito grandes */
+    display: block;
+    margin: 0 auto;
+}
 
-.music-all {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px; /* Espaçamento entre as imagens */
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.music-icone{
+    width: 25px;
+    padding: 4px 8px;
 }
 
 .music-div {
     text-align: center;
 }
 
-.music-imagem {
-    width: 100%;
-    max-width: 140px; /* Define um limite */
-    display: block;
-    margin: 0 auto;
-}
-
-.music-icone {
-    width: 25px;
-    padding: 4px 8px;
-}
-
-.music-titulo {
+.music-titulo{
     text-align: center;
     padding: 20px 0;
 }
 
-/* 🔹 Rodapé */
-.rodape {
-    background-color: rgba(0, 81, 255, 0.575);
-    text-align: center;
+.music-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-.rodape-imagem {
+.rodape{
+    background-color: rgba(0, 81, 255, 0.575);
+    text-align: center;
+}
+
+.rodape-imagem{
     height: 60px;
     padding: 12px 0;
+   
 }
 
-/* 🔹 Tipografia */
-p {
+p{
     text-align: justify;
-    line-height: 1.6;
 }
 
-h2 {
+h2{
     text-align: center;
 }

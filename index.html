@@ -19,50 +19,108 @@
             <li class="cabecalho-lista-item">MUSIC</li>
         </ul>
     </header>
-    
     <section class="musica2">
         <div class="musica2-div-conteudo">
             <h2 class="musica2-titulo">THE BEST MUSIC</h2>
-            <p class="musica2-texto-um">O "THE BEST MUSIC" tem como objetivo mostrar os DOWNLOADS das melhores músicas do momento. Caso sua música não esteja aqui, não se entristeça, pois ela pode ser adicionada. <3</p>             
-        </div>
+            <p class="musica2-texto-um">  O "THE BEST MUSIC" tem como objetivo mostras os DOWNLOADS das melhores músicas do momento.
+                Caso sua música não esteja aqui não se entristeça pois ela pode ser adicionada <3</p>             
     </section>
-    
     <section class="music">
         <h2 class="music-titulo">Quais são nossas músicas do momento?</h2>
-        
-        <div class="music-container">
-            <!-- Lista de músicas -->
-            <script>
-                const musicas = [
-                    { nome: "SWEET DREAMS", img: "hqdefault.jpg", yt: "bG9z-atG7gc", inst: "7cloudsdaily", mp3: "Eurythmics - Sweet Dreams (Lyrics).mp3" },
-                    { nome: "Bye Bye Bye", img: "bye.jpg", yt: "2ydCvkxuNm4", inst: "7cloudsdaily", mp3: "NSYNC - Bye Bye Bye.mp3" },
-                    { nome: "I'm Still Standing", img: "still.jpg", yt: "MJ_aPtt4U8M", inst: "jvbsucks", mp3: "Elton John - I'm Still Standing.mp3" },
-                    { nome: "VAPO NO SETOR", img: "setor.jpg", yt: "997Md4VggDs", inst: "djanxvarr", mp3: "VAPO NO SETOR.mp3" },
-                    { nome: "Honeypie", img: "honey pie.jpg", yt: "997Md4VggDs", inst: "seanway_studio", mp3: "JAWNY - Honeypie.mp3" },
-                    { nome: "My Ordinary Life", img: "my ordinary life.jpg", yt: "H_6JU6vJMS0", inst: "", mp3: "The Living Tombstone - My Ordinary Life.mp3" },
-                    { nome: "Life Could Be A Dream", img: "life.jpg", yt: "n-miJQUD9l4", inst: "", mp3: "Street Corner Renaissance - Life Could Be A Dream.mp3" },
-                    { nome: "MEET THE FROWNIES", img: "mett.jpg", yt: "5UtVzb8ZkmY", inst: "ikalcetoo", mp3: "MEET THE FROWNIES.mp3" },
-                    { nome: "SPOOKY", img: "spook.jpg", yt: "Yw2g6_uySOA", inst: "fennecxx", mp3: "fennecxx, DJ ALEX - SPOOKY.mp3" },
-                    { nome: "ZN FODÁSTICA 2", img: "ZN FODÁSTICA 2 - TIKTOK VERSION.jpg", yt: "DhbNBA4gBM0", inst: "", mp3: "ZN FODÁSTICA 2.mp3" },
-                    { nome: "Tek It", img: "cafuné.jpg", yt: "T1EJZsaqevU", inst: "wearecafune", mp3: "Cafuné - Tek It.mp3" }
-                ];
-                
-                document.write(musicas.map(musica => `
-                    <div class="music-div">
-                        <img class="music-imagem" src="imgs/${musica.img}" alt="${musica.nome}">
-                        <h3 class="music-nome">${musica.nome}</h3>
-                        <a href="https://youtu.be/${musica.yt}" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="YouTube"></a>
-                        ${musica.inst ? `<a href="https://www.instagram.com/${musica.inst}" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="Instagram"></a>` : ''}
-                        <a href="${musica.mp3}" download><img class="music-icone" src="imgs/downloads.png" alt="Download"></a>
-                    </div>
-                `).join(''));
-            </script>
+        <div class="music-div">
+            <img class="music-imagem" src="imgs/hqdefault.jpg" alt="foto da música SWEET DREAMS">
+            <h3 class="music-nome">SWEET DREAMS</h3>
+            <a href="https://youtu.be/bG9z-atG7gc?si=k0bz2zyGHvN8bduM" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+            <a href="https://www.instagram.com/7cloudsdaily/#" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+            <a href="Eurythmics - Sweet Dreams (Lyrics).mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
         </div>
+       
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/bye.jpg" alt="foto da música *NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack)">
+                <h3 class="music-nome">*NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack)</h3>
+                <a href="https://youtu.be/2ydCvkxuNm4?si=NzF2J1uBR9ockIcE" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/7cloudsdaily/#" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="＊NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/still.jpg"foto da música Elton John - I'm Still Standing (Lyrics)">
+                <h3 class="music-nome">Elton John - I'm Still Standing (Lyrics)</h3>
+                <a href="https://youtu.be/MJ_aPtt4U8M?si=6U8P1LKhYlNnYEee" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/jvbsucks/" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="Elton John - I'm Still Standing (Lyrics).mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/setor.jpg"foto da música VAPO NO SETOR">
+                <h3 class="music-nome">VAPO NO SETOR</h3>
+                <a href="https://youtu.be/997Md4VggDs?si=zNkBTufn4cZe8q81" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/djanxvarr/" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="VAPO NO SETOR.mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/honey pie.jpg"foto da JAWNY - Honeypie Animation MV (Full Version by SeanWay Studio) #animation ‪@JAWNY‬">
+                <h3 class="music-nome">JAWNY - Honeypie Animation MV (Full Version by SeanWay Studio) #animation ‪@JAWNY‬</h3>
+                <a href="https://youtu.be/997Md4VggDs?si=zNkBTufn4cZe8q81" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/seanway_studio/" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="JAWNY - Honeypie Animation MV (Full Version by SeanWay Studio) #animation @JAWNY.mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/my ordinary life.jpg"foto da The Living Tombstone - My Ordinary Life (Lyrics/Vietsub)">
+                <h3 class="music-nome">The Living Tombstone - My Ordinary Life (Lyrics/Vietsub)</h3>
+                <a href="https://youtu.be/H_6JU6vJMS0?si=LeWXD1IcIOlGCDYK" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a> 
+                <a href="The Living Tombstone - My Ordinary Life (Lyrics⧸Vietsub).mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/life.jpg"foto da Street Corner Renaissance - Life Could Be A Dream">
+                <h3 class="music-nome">Street Corner Renaissance - Life Could Be A Dream</h3>
+                <a href="https://youtu.be/n-miJQUD9l4?si=LbGlfyEpFVRop-Jk" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>               
+                <a href="Street Corner Renaissance - Life Could Be A Dream.mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/mett.jpg"foto da MEET THE FROWNIES x LOVELY BASTARDS [TIKTOK REMIX SLOWED]">
+                <h3 class="music-nome">MEET THE FROWNIES x LOVELY BASTARDS [TIKTOK REMIX SLOWED]</h3>
+                <a href="https://youtu.be/5UtVzb8ZkmY?si=C3HfAPcmPqdN6up6" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/ikalcetoo/" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="MEET THE FROWNIES x LOVELY BASTARDS [TIKTOK REMIX SLOWED].mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/spook.jpg"foto da fennecxx, DJ ALEX - SPOOKY (Official Music)">
+                <h3 class="music-nome">fennecxx, DJ ALEX - SPOOKY (Official Music)</h3>
+                <a href="https://youtu.be/Yw2g6_uySOA?si=FBEVOF_9otNegvXh" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/fennecxx" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="fennecxx, DJ ALEX - SPOOKY (Official Music).mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/ZN FODÁSTICA 2 - TIKTOK VERSION.jpg"foto da ZN FODÁSTICA 2 - TIKTOK VERSION">
+                <h3 class="music-nome">ZN FODÁSTICA 2 - TIKTOK VERSION</h3>
+                <a href="https://youtu.be/DhbNBA4gBM0?si=jqbJ7cENulqAdGC1" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>        
+                <a href="ZN FODÁSTICA 2 - TIKTOK VERSION.mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+
+            <div class="music-div">
+                <img class="music-imagem" src="imgs/cafuné.jpg"foto da Cafuné - Tek It [Official Audio]">
+                <h3 class="music-nome">Cafuné - Tek It [Official Audio]</h3>
+                <a href="https://youtu.be/T1EJZsaqevU?si=mEvSV-4DL-jH68sd" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="icone youtube"></a>
+                <a href="https://www.instagram.com/wearecafune" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="icone instagram"></a>
+                <a href="Cafuné - Tek It [Official Audio].mp3" download><img class="music-icone" src="imgs/downloads.png" alt="icone download"></a>
+            </div>
+    
+      <span></span>
+        <span></span>
     </section>
     
     <footer class="rodape">
-        <img class="rodape-imagem" src="imgs/youtube-logo.png" alt="YouTube">
-        <img class="rodape-imagem" src="imgs/instagram.png" alt="Instagram">
+
+        <img class="rodape-imagem"src="imgs/youtube-logo.png" alt="youtube">
+        <img class="rodape-imagem"src="imgs/instagram.png" alt="instagram">
+
     </footer>
 </body>
 </html>
