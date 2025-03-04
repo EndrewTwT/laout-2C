@@ -112,29 +112,3 @@ p {
 h2 {
     text-align: center;
 }
-
-/* 🔹 Responsividade */
-@media (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cabecalho-logo,
-    .cabecalho-imagem {
-        width: 60%;
-    }
-
-    .musica2 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .musica2-div-conteudo {
-        width: 80%;
-    }
-
-    .music-all {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-}
