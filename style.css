@@ -54,8 +54,11 @@ body {
 .music{
     padding: 24px 0;
 }
-.music-imagem{
-    width: 140px;
+.music-imagem {
+    width: 100%; /* As imagens se ajustam ao tamanho da coluna */
+    max-width: 140px; /* Limite para não ficarem muito grandes */
+    display: block;
+    margin: 0 auto;
 }
 
 .music-icone{
@@ -63,9 +66,8 @@ body {
     padding: 4px 8px;
 }
 
-.music-div{
+.music-div {
     text-align: center;
-    padding: 16px 0;
 }
 
 .music-titulo{
