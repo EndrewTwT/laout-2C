@@ -12,8 +12,8 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-logo" src="imgs/test2.png" alt="Logo The Best Music">
-        <img class="cabecalho-imagem" src="imgs/logo_size_invert.jpg" alt="Logo The Best Music">
+        <img class="cabecalho-logo" src="imgs/test2.png" alt="logo the best music">
+        <img class="cabecalho-imagem" src="imgs/logo_size_invert.jpg" alt="logo the best music">
         <ul class="cabecalho-lista">
             <li class="cabecalho-lista-item">BEST</li>
             <li class="cabecalho-lista-item">MUSIC</li>
@@ -23,45 +23,40 @@
     <section class="musica2">
         <div class="musica2-div-conteudo">
             <h2 class="musica2-titulo">THE BEST MUSIC</h2>
-            <p class="musica2-texto-um">
-                O "THE BEST MUSIC" tem como objetivo mostrar os DOWNLOADS das melhores músicas do momento.
-                Caso sua música não esteja aqui, não se entristeça, pois ela pode ser adicionada. <3
-            </p>
+            <p class="musica2-texto-um">O "THE BEST MUSIC" tem como objetivo mostrar os DOWNLOADS das melhores músicas do momento. Caso sua música não esteja aqui, não se entristeça, pois ela pode ser adicionada. <3</p>             
         </div>
     </section>
     
     <section class="music">
         <h2 class="music-titulo">Quais são nossas músicas do momento?</h2>
-        <div class="music-all">
-            <div class="music-div">
-                <img class="music-imagem" src="imgs/hqdefault.jpg" alt="Sweet Dreams">
-                <h3 class="music-nome">SWEET DREAMS</h3>
-                <a href="https://youtu.be/bG9z-atG7gc" target="_blank">
-                    <img class="music-icone" src="imgs/youtube-logo.png" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/7cloudsdaily/" target="_blank">
-                    <img class="music-icone" src="imgs/instagram.png" alt="Instagram">
-                </a>
-                <a href="Eurythmics - Sweet Dreams (Lyrics).mp3" download>
-                    <img class="music-icone" src="imgs/downloads.png" alt="Download">
-                </a>
-            </div>
-            
-            <div class="music-div">
-                <img class="music-imagem" src="imgs/bye.jpg" alt="Bye Bye Bye">
-                <h3 class="music-nome">*NSYNC - Bye Bye Bye</h3>
-                <a href="https://youtu.be/2ydCvkxuNm4" target="_blank">
-                    <img class="music-icone" src="imgs/youtube-logo.png" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/7cloudsdaily/" target="_blank">
-                    <img class="music-icone" src="imgs/instagram.png" alt="Instagram">
-                </a>
-                <a href="*NSYNC - Bye Bye Bye (Lyrics).mp3" download>
-                    <img class="music-icone" src="imgs/downloads.png" alt="Download">
-                </a>
-            </div>
-            
-            <!-- Adicione mais músicas seguindo o mesmo padrão acima -->
+        
+        <div class="music-container">
+            <!-- Lista de músicas -->
+            <script>
+                const musicas = [
+                    { nome: "SWEET DREAMS", img: "hqdefault.jpg", yt: "bG9z-atG7gc", inst: "7cloudsdaily", mp3: "Eurythmics - Sweet Dreams (Lyrics).mp3" },
+                    { nome: "Bye Bye Bye", img: "bye.jpg", yt: "2ydCvkxuNm4", inst: "7cloudsdaily", mp3: "NSYNC - Bye Bye Bye.mp3" },
+                    { nome: "I'm Still Standing", img: "still.jpg", yt: "MJ_aPtt4U8M", inst: "jvbsucks", mp3: "Elton John - I'm Still Standing.mp3" },
+                    { nome: "VAPO NO SETOR", img: "setor.jpg", yt: "997Md4VggDs", inst: "djanxvarr", mp3: "VAPO NO SETOR.mp3" },
+                    { nome: "Honeypie", img: "honey pie.jpg", yt: "997Md4VggDs", inst: "seanway_studio", mp3: "JAWNY - Honeypie.mp3" },
+                    { nome: "My Ordinary Life", img: "my ordinary life.jpg", yt: "H_6JU6vJMS0", inst: "", mp3: "The Living Tombstone - My Ordinary Life.mp3" },
+                    { nome: "Life Could Be A Dream", img: "life.jpg", yt: "n-miJQUD9l4", inst: "", mp3: "Street Corner Renaissance - Life Could Be A Dream.mp3" },
+                    { nome: "MEET THE FROWNIES", img: "mett.jpg", yt: "5UtVzb8ZkmY", inst: "ikalcetoo", mp3: "MEET THE FROWNIES.mp3" },
+                    { nome: "SPOOKY", img: "spook.jpg", yt: "Yw2g6_uySOA", inst: "fennecxx", mp3: "fennecxx, DJ ALEX - SPOOKY.mp3" },
+                    { nome: "ZN FODÁSTICA 2", img: "ZN FODÁSTICA 2 - TIKTOK VERSION.jpg", yt: "DhbNBA4gBM0", inst: "", mp3: "ZN FODÁSTICA 2.mp3" },
+                    { nome: "Tek It", img: "cafuné.jpg", yt: "T1EJZsaqevU", inst: "wearecafune", mp3: "Cafuné - Tek It.mp3" }
+                ];
+                
+                document.write(musicas.map(musica => `
+                    <div class="music-div">
+                        <img class="music-imagem" src="imgs/${musica.img}" alt="${musica.nome}">
+                        <h3 class="music-nome">${musica.nome}</h3>
+                        <a href="https://youtu.be/${musica.yt}" target="_blank"><img class="music-icone" src="imgs/youtube-logo.png" alt="YouTube"></a>
+                        ${musica.inst ? `<a href="https://www.instagram.com/${musica.inst}" target="_blank"><img class="music-icone" src="imgs/instagram.png" alt="Instagram"></a>` : ''}
+                        <a href="${musica.mp3}" download><img class="music-icone" src="imgs/downloads.png" alt="Download"></a>
+                    </div>
+                `).join(''));
+            </script>
         </div>
     </section>
     
