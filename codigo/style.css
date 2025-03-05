@@ -13,11 +13,11 @@ body {
     align-items:center;
     padding: 20px 0;
 }
-.cabecalho-alura{
+.cabecalho-logo{
     width: 10%;
 }
 .cabecalho-imagem{
-     width: 10%;
+     width: 40%;
     
     
 }
@@ -28,12 +28,12 @@ body {
     font-size: 25px;
 }
 
-.play-list-imagem{
+.musica2-imagem{
     width: 10%;
     
 }
 
-.play-list{
+.musica2{
     background-image: linear-gradient(#fba3cc,#fbc7e2);
     color:white;
     display: flex;
@@ -42,20 +42,23 @@ body {
     padding: 24px 0;
 }
 
-.play-list-div-conteudo{
+.musica2-div-conteudo{
     width: 35%;
 }
 
 
-.play-list-titulo{
+.musica2-titulo{
     padding: 34px 0;
 }
 
 .music{
     padding: 24px 0;
 }
-.music-imagem{
-    width: 140px;
+.music-imagem {
+    width: 100%; /* As imagens se ajustam ao tamanho da coluna */
+    max-width: 140px; /* Limite para não ficarem muito grandes */
+    display: block;
+    margin: 0 auto;
 }
 
 .music-icone{
@@ -63,9 +66,8 @@ body {
     padding: 4px 8px;
 }
 
-.music-div{
+.music-div {
     text-align: center;
-    padding: 16px 0;
 }
 
 .music-titulo{
@@ -73,10 +75,13 @@ body {
     padding: 20px 0;
 }
 
-.music-todos{
+.music-all {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    background-color: rgba(156, 174, 177, 0.411);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .rodape{
