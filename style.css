@@ -57,7 +57,7 @@ body {
 .music-imagem {
     width: 100%; /* As imagens se ajustam ao tamanho da coluna */
     max-width: 140px; /* Limite para não ficarem muito grandes */
-    display: block;
+    display: grid;
     margin: 0 auto;
 }
 
