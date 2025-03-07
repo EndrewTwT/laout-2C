@@ -6,18 +6,18 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .cabecalho {
-    background-color: #fba3cc;
-    color: white;
+    background-color: #fffb005e;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items:center;
     padding: 20px 0;
 }
-.cabecalho-logo{
+.cabecalho-alura{
     width: 10%;
 }
 .cabecalho-imagem{
-     width: 40%;
+     width: 20%;
     
     
 }
@@ -28,64 +28,59 @@ body {
     font-size: 25px;
 }
 
-.play-list-imagem{
+.escola-imagem{
     width: 10%;
     
 }
 
-.play-list{
-    background-image: linear-gradient(#fba3cc,#fbc7e2);
-    color:white;
+.escola{
+    background-image: linear-gradient(#fffb005e,#a10202da);
+    color:rgb(248, 246, 248);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px 0;
 }
 
-.play-list-div-conteudo{
+.escola-div-conteudo{
     width: 35%;
 }
 
 
-.play-list-titulo{
+.escola-titulo{
     padding: 34px 0;
 }
 
-.music{
+.estudante{
     padding: 24px 0;
 }
-.music-imagem {
-    width: 100%; /* As imagens se ajustam ao tamanho da coluna */
-    max-width: 140px; /* Limite para não ficarem muito grandes */
-    display: grid;
-    margin: 0 auto;
+.estudante-imagem{
+    width: 140px;
 }
 
-.music-icone{
+.estudante-icone{
     width: 25px;
     padding: 4px 8px;
 }
 
-.music-div {
+s.estudante-div{
     text-align: center;
+    padding: 16px 0;
 }
 
-.music-titulo{
+.estudante-titulo{
     text-align: center;
     padding: 20px 0;
 }
 
-.music-all {
+.estudante-todos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 20px; /* Espaçamento entre as imagens */
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: rgba(252, 253, 180, 0.829);
 }
 
 .rodape{
-    background-color: #fba3cc;
+    background-color: rgba(255, 0, 170, 0.301);
     text-align: center;
 }
 
